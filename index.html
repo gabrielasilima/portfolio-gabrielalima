@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+    <div class="particulas"></div>
     <nav class="nav-bar">
         <ul class="menu">
             <li>
@@ -32,15 +34,16 @@
     </nav>
 
     <main id="inicio" class="menu-foto">
-            <img src="./img/gabriela3.jpeg" alt="Foto de Gabriela Lima" class="foto-perfil">
-            <h1>Gabriela Lima</h1>
-            <p class="text-foto">Desenvolvedora de Software</p>
+        <img src="./img/gabriela3.jpeg" alt="Foto de Gabriela Lima" class="foto-perfil">
+        <h1>Gabriela Lima</h1>
+        <p class="text-foto">Desenvolvedora de Software</p>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Desenvolvedora de software apaixonada por criar soluções inovadoras e eficientes. Focada em entregar resultados de qualidade, combinando criatividade, lógica e tecnologias de ponta.</p>
+            <p class="sobre-paragrafo">Desenvolvedora de software apaixonada por criar soluções inovadoras e eficientes.
+                Focada em entregar resultados de qualidade, combinando criatividade, lógica e tecnologias de ponta.</p>
         </div>
     </section>
 
@@ -49,31 +52,40 @@
         <div class="projetos-caixa">
             <div class="projetos-card">
                 <img src="./img/ifolha-projeto.png" alt="Projeto - IFOLHA" class="projetos-imagem">
-                <h3 class="info-projetos">IFolha</h3>
-                <p class="paragrafo-projetos">Aplicativo desenvolvido para a instituição IFPR para o TCC</p>
+                <div class="caixa-projeto">
+                    <h3 class="info-projetos">IFolha</h3>
+                    <p class="paragrafo-projetos">Aplicativo desenvolvido para a instituição IFPR para o TCC</p>
+                </div>
             </div>
             <div class="projetos-card">
                 <img src="./img/ifolha-projeto.png" alt="Projeto - Nibbi" class="projetos-imagem">
-                <h3 class="info-projetos">Nibbi</h3>
-                <p class="paragrafo-projetos">Loja virtual de Jóias</p>
+                <div class="caixa-projeto">
+                    <h3 class="info-projetos">Nibbi</h3>
+                    <p class="paragrafo-projetos">Loja virtual de Jóias</p>
+                </div>
             </div>
             <div class="projetos-card">
                 <img src="./img/ifolha-projeto.png" alt="Projeto - Jobday" class="projetos-imagem">
-                <h3 class="info-projetos">Jobday</h3>
-                <p class="paragrafo-projetos">Aplicativo criado com o objetivo de ser um intermediador de empregos</p>
+                <div class="caixa-projeto">
+                    <h3 class="info-projetos">Jobday</h3>
+                    <p class="paragrafo-projetos">Aplicativo criado com o objetivo de ser um intermediador de empregos
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contato" class="contato">
-        <h2 class="contatos-titulo">Contatos</h2>
+        <h2 class="contatos-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
             <div class="grupo-form">
                 <input placeholder="Nome" class="campo-form">
             </div>
             <div class="grupo-form">
-                <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
             </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
         </form>
     </section>
 </body>
