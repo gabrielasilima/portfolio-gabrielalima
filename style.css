@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +24,12 @@ html {
 body {
     background-color: var(--escuro);
     color: var(--claro);
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--primaria);
 }
 
 .nav-bar {
@@ -91,12 +100,14 @@ h1 {
     color: var(--claro);
 }
 
+/*******SOBRE*******/
+
 .sobre {
     padding: 6rem 2rem;
 }
 
 .sobre-titulo {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--claro);
     text-align: center;
     margin-bottom: 20px;
@@ -104,6 +115,7 @@ h1 {
 
 .sobre-paragrafo {
     font-size: 15px;
+    text-align: justify;
 
 }
 
@@ -117,13 +129,15 @@ h1 {
     background: rgba(255, 255, 255, 0.05);
 }
 
+/*******PROJETOS*******/
+
 .projetos {
     padding: 6rem 2rem;
 }
 
 .projetos-titulos {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 
@@ -138,6 +152,7 @@ h1 {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .projetos-card {
@@ -148,6 +163,10 @@ h1 {
     overflow: hidden;
     transition: all 0.5 ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .info-projetos {
@@ -170,13 +189,86 @@ h1 {
     object-fit: cover;
 }
 
+.btn-projeto {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(79, 70, 229, 0.3);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-projeto:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}
+
+/*******GITHUB*******/
+
+
+.github_repositorios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.titulo-github{
+    text-align: center;
+    font-size: 30px;
+}
+.repo_card {
+    width: calc(50% - 20px);
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(0deg, var(--vidro) 0%, var(--escuro) 100%), rgba(79, 70, 229, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px var(--escuro);
+}
+
+.repo_card h3 a {
+    color: var(--claro);
+    text-decoration: none;
+}
+
+.repo_card p {
+    margin: 10px 0;
+}
+
+.github_tabela {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: var(--claro);
+    font-size: 14px;
+}
+
+.github_tabela th, .github_tabela td {
+    border: 1px solid var(--secundaria);
+    padding: 10px 15px;
+    text-align: center;
+    background: var(--vidro);
+}
+
+.github_tabela th {
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+
+/*******CONTATO*******/
+
 .contato {
     padding: 6rem 2rem;
 }
 
 .contatos-titulo {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
 
 }
@@ -240,6 +332,62 @@ h1 {
         radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
         radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
         var(--maisEscuro);
+}
+
+/*******DETALHES-PROJETOS*******/
+
+.imagem-projeto{
+    text-align: center;
+}
+
+.imagem-projeto img{
+    width: 80%;
+    border-radius: 20px;
+
+}
+
+.titulos-projetos{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.projeto-texto {
+    text-align: justify;
+    margin: 50px 150px;
+    font-weight: 400;
+}
+
+.voltar-inicio {
+    position: fixed;
+    bottom: 20px;      
+    right: 20px;       
+    z-index: 999;      
+}
+.voltar-inicio a {
+    background-color: rgba(79, 70, 229, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.voltar-inicio a:hover {
+    background-color: #0f172a;
+    transform: translateY(-3px);
+}
+
+.detalhe-teste{
+    margin-top: 30px;
+}
+
+.detalhe-teste a{
+    color:#4f46e5;
 }
 
 @keyframes flutuar {
