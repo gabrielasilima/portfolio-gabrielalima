@@ -129,6 +129,37 @@ h1 {
     background: rgba(255, 255, 255, 0.05);
 }
 
+/*******EDUCACAO*******/
+
+.educacao {
+    display: flex;
+    justify-content: center;
+}
+
+.educacao_curso {
+    padding: 10px 20px;
+    margin: 20px;
+    width: 300px;
+    border-radius: 25px;
+    border: 2px solid var(--secundaria);
+    background: var(--vidro);
+    box-shadow: 0 0 10px var(--escuro);
+    text-align: left;
+}
+
+.educacao-detalhes h2{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 /*******PROJETOS*******/
 
 .projetos {
@@ -320,6 +351,14 @@ h1 {
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
+.erro {
+  color: var(--primaria);
+  font-size: 0.9rem;
+  height: 10px; 
+  margin-top: 4px;
+  display: block;
+}
+
 .particulas {
     position: fixed;
     top: 0;
@@ -332,6 +371,34 @@ h1 {
         radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
         radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
         var(--maisEscuro);
+}
+
+.redes-sociais {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(79, 70, 229, 0.2);
+    color: var(--claro);
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.1);
+    background-color: #4f46e5;
 }
 
 /*******DETALHES-PROJETOS*******/
@@ -388,6 +455,12 @@ h1 {
 
 .detalhe-teste a{
     color:#4f46e5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 10px;
 }
 
 @keyframes flutuar {
