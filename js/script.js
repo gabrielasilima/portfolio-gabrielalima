@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
+
+
 function enviarWhats(event) {
     event.preventDefault()
 
@@ -15,32 +25,32 @@ function enviarWhats(event) {
 }
 
 function validarFormulario(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  const nomeInput = document.getElementById("nome");
-  const mensagemInput = document.getElementById("mensagem");
+    const nomeInput = document.getElementById("nome");
+    const mensagemInput = document.getElementById("mensagem");
 
-  const erroNome = document.getElementById("erro-nome");
-  const erroMensagem = document.getElementById("erro-mensagem");
+    const erroNome = document.getElementById("erro-nome");
+    const erroMensagem = document.getElementById("erro-mensagem");
 
-  erroNome.textContent = "";
-  erroMensagem.textContent = "";
+    erroNome.textContent = "";
+    erroMensagem.textContent = "";
 
-  let valido = true;
+    let valido = true;
 
-  if (!nomeInput.value.trim()) {
-    erroNome.textContent = "Por favor, preencha seu nome.";
-    valido = false;
-  }
+    if (!nomeInput.value.trim()) {
+        erroNome.textContent = "Por favor, preencha seu nome.";
+        valido = false;
+    }
 
-  if (!mensagemInput.value.trim()) {
-    erroMensagem.textContent = "Por favor, digite sua mensagem.";
-    valido = false;
-  }
+    if (!mensagemInput.value.trim()) {
+        erroMensagem.textContent = "Por favor, digite sua mensagem.";
+        valido = false;
+    }
 
-  if (valido) {
-    enviarWhats(event); 
-  }
+    if (valido) {
+        enviarWhats(event);
+    }
 }
 document.addEventListener("DOMContentLoaded", () => {
     const githubRepositoriosHtml = document.getElementById("github_repositorios");

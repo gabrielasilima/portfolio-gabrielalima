@@ -71,6 +71,34 @@ hr {
     width: 100%;
 }
 
+.menu-toggle{
+    display: none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(15, 23, 42, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
 .menu-foto {
     min-height: 100vh;
     display: flex;
