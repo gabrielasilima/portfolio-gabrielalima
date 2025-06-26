@@ -160,26 +160,36 @@ h1 {
 /*******EDUCACAO*******/
 
 .educacao {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .educacao_curso {
-    padding: 10px 20px;
-    margin: 20px;
-    width: 300px;
-    border-radius: 25px;
+    padding: 20px;
+    border-radius: 16px;
     border: 2px solid var(--secundaria);
     background: var(--vidro);
     box-shadow: 0 0 10px var(--escuro);
     text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
 }
 
-.educacao-detalhes h2{
+.educacao_curso:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+.educacao-detalhes h2 {
     text-align: center;
     margin-bottom: 60px;
     margin-top: 30px;
     font-weight: 500;
+    font-size: 30px;
 }
 
 .subtitulo {
@@ -431,28 +441,33 @@ h1 {
 
 /*******DETALHES-PROJETOS*******/
 
-.imagem-projeto{
+.imagem-projeto {
     text-align: center;
+    padding: 0 1rem;
 }
 
-.imagem-projeto img{
-    width: 80%;
+.imagem-projeto img {
+    width: 100%;
+    max-width: 800px;
     border-radius: 20px;
-
+    height: auto;
 }
 
-.titulos-projetos{
-    font-size: 40px;
+.titulos-projetos {
+    font-size: 32px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-weight: 500;
+    padding: 0 1rem;
 }
 
 .projeto-texto {
     text-align: justify;
-    margin: 50px 150px;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
     font-weight: 400;
+    line-height: 1.6;
 }
 
 .voltar-inicio {
@@ -461,6 +476,7 @@ h1 {
     right: 20px;       
     z-index: 999;      
 }
+
 .voltar-inicio a {
     background-color: rgba(79, 70, 229, 0.8);
     color: #fff;
@@ -477,12 +493,14 @@ h1 {
     transform: translateY(-3px);
 }
 
-.detalhe-teste{
+.detalhe-teste {
     margin-top: 30px;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-.detalhe-teste a{
-    color:#4f46e5;
+.detalhe-teste a {
+    color: #4f46e5;
 }
 
 footer {
